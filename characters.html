@@ -1,8 +1,17 @@
 <html>
 <head>
     <title>Select a Character</title>
-    <script type="text/javascript" src="hover.js"></script>
     
+<!-- the line below calls the script that will be applied to the entire page.  You
+can call a javascript file whenever you want but it's typical to put the calls either 
+before or after the main content. In a page generating service like Wordpress or 
+Joomla, most javascript calls will be put in the header template.  -->
+    <script type="text/javascript" src="hover.js"></script>
+
+<!-- Ordinarily I would put the class definitions below into a separate .css file, 
+but to keep things simple I'm keeping it all here.  This page has no other styling, 
+so everything not defined will just render with browser defaults. -->
+
 <style>
 *, *:before, *:after{ 
     box-sizing: border-box; 
@@ -45,43 +54,42 @@
     <table style="margin-right: auto; margin-left: auto">
     <tr>
     <td>
+        <!-- I'm using divs instead of img elements because it's easier to manipulate divs via javascript -->
       <div class="hiddenborder" id="fumi" style="background-image: url(http://i.imgur.com/pxkvFJW.png);"
-        onclick="bio(0)" onMouseOver="change(this);" onMouseOut="back(this);">
+        onclick="Bio(0)" onMouseOver="change(this);" onMouseOut="back(this);">
         </div>
     </td>
     <td>
         <div class="hiddenborder" id="dietrich" style="background-image: url(http://i.imgur.com/HSWN5si.png);"
-        onclick="bio(2)"  onMouseOver="change(this);" onMouseOut="back(this);">
+        onclick="Bio(2)"  onMouseOver="change(this);" onMouseOut="back(this);">
         </div>
     </td>
     <td>
         <div class="hiddenborder" id="serghei" style="background-image: url(http://i.imgur.com/tMFceli.gif);"
-        onclick="bio(3)" onMouseOver="change(this);" onMouseOut="back(this);">
+        onclick="Bio(3)" onMouseOver="change(this);" onMouseOut="back(this);">
         </div>
     </td>
     </tr>
     <tr>
       <td>
         <div class="hiddenborder" style="background-image: url(http://i.imgur.com/PwayRs3.gif);" id="bunny" 
-        onclick="bio(1)"  onMouseOver="change(this);" onMouseOut="back(this);">
+        onclick="Bio(1)"  onMouseOver="change(this);" onMouseOut="back(this);">
         </div>
       </td>
       <td>
         <div class="hiddenborder" style="background-image: url(http://i.imgur.com/9xecLPo.gif);" id="fulana" 
-        onclick="bio(4)" onMouseOver="change(this);" onMouseOut="back(this);">
+        onclick="Bio(4)" onMouseOver="change(this);" onMouseOut="back(this);">
         </div>
       </td>
       <td>
         <div class="hiddenborder" style="background-image: url(http://i.imgur.com/UwlF2ND.png);" id="bstag" 
-        onclick="bio(5)" onMouseOver="change(this);" onMouseOut="back(this);">
+        onclick="Bio(5)" onMouseOver="change(this);" onMouseOut="back(this);">
         </div>
       </td>
     </tr>
     <tr><td colspan="3"><div id="bioDiv" style="max-width:440px;"></div></td></tr>
     </table>
     </div>
-
-    
 
     <div><button id="butt" onclick="debug()">Debug</button></div>
 
