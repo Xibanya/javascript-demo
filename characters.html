@@ -12,6 +12,12 @@ Joomla, most javascript calls will be put in the header template.  -->
 but to keep things simple I'm keeping it all here.  This page has no other styling, 
 so everything not defined will just render with browser defaults. -->
 
+<!-- below I create two classes, hiddenborder and border -->
+<!-- when you assign a class to an HTML element, you apply that class's style to that element -->
+<!-- You can achieve the same effect inline by adding all the stuff to an element's style="" parameter, but
+if several elements are going to have the same style, the page loads faster if they all just call the same class. -->
+<!-- not to mention the HTML is easier to parse in that case. -->
+
 <style>
 *, *:before, *:after{ 
     box-sizing: border-box; 
