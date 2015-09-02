@@ -17,7 +17,7 @@ this shit.*/
  *          Well you can dick around with some of the scripts there without using FTP, so I thought I was 
  *          hot shit and could make some tweaks from work.  Well I submitted changes to functions.php and I put 
  *          one extra semicolon where there wasn't supposed to be one.  The entire site went down, including the 
- *          dashboard, meaning I could go back and take out the semicolon in the way that I stuck it in the code 
+ *          dashboard, meaning I couldn't go back and take out the semicolon in the way that I stuck it in the code 
  *          in the first place.
  * 
  * http://i.imgur.com/rwpzVxj.png <----- LOOK AT THAT SHIT
